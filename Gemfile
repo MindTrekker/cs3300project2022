@@ -63,6 +63,7 @@ group :development, :test do
 
   # Use RSpec
   gem 'rspec-rails', '~> 4.1.0'
+  gem "devise"
 end
 
 group :development do
