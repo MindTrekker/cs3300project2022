@@ -4,24 +4,30 @@
 body{
   margin: 0px;
   padding:0px;
+  background-color: SteelBlue!important;
 }
 .notice {
   margin:0px;
   padding:0px;
 }
 .alert{
-  margin-bottom:0;
-  padding:0;
+  margin-bottom:0px!important;
+  padding:0!important;
 }
 .div-centered {
   text-align: left; 
-  margin: auto; 
-  width: 300px;
+  margin-left: 5rem;
+  margin-right: auto;
+  align-items: top;
 }
 nav{
-  margin-bottom: 1rem;
+  background-color: Navy!important;
+  margin-bottom:0px;
+  padding:1rem!important;
 }
 #form{
+  font-size: 20px;
+  background-color: PowderBlue;
   border-style: solid;
   border-width: medium;
   border-radius: 5px;
@@ -30,6 +36,12 @@ nav{
 #pagetitle{
   font-size: 60px;
 }
+#back-banner{
+  background-color: Linen!important;
+  margin:auto;
+  height: 100vh;
+}
+
 </style>
 <head>
   <title>G Mckenzie Online Portfolio</title>
@@ -40,15 +52,15 @@ nav{
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand navbar-primary bg-primary">
-  <a class="navbar-brand text-light" href="#">Grayson Mckenzie</a>
+<nav class="navbar navbar-expand navbar-primary">
+  <a class="navbar-brand text-light" href="projects#index">Grayson Mckenzie</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
     <div class="collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link text-light" href="#"> Home </a>
+            <a class="nav-link text-light" href="projects#index"> Home </a>
             </li>
             <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-light" href="#" role="button" id="accountDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Account </a>
@@ -61,7 +73,9 @@ nav{
         </ul>
     </div>
 </nav>
-<div class="div-centered" id="content">
+
+<div class="d-flex w-75" id="back-banner">
+<div class="div-centered container-xs" id="content">
   <h1 id="pagetitle">New Project</h1>
   <div id="form">
   <%= render "form", project: @project %>
@@ -69,6 +83,7 @@ nav{
   <br>
 
   <%= link_to "Back to projects", projects_path %>
+</div>
 </div>
 </body>
 </html>
