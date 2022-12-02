@@ -18,12 +18,12 @@ label{
 
   <div id= "title">
     <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, :required => 'required' %>
   </div>
 
   <div id="description">
     <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
+    <%= form.text_area :description, :required => 'required' %>
   </div>
 
   <div id="submit">
