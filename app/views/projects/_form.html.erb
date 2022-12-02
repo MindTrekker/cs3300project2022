@@ -1,4 +1,7 @@
 <style>
+label{
+  font-size: 30px;
+}
 </style>
 <%= form_with(model: project) do |form| %>
   <% if project.errors.any? %>
@@ -23,7 +26,7 @@
     <%= form.text_area :description %>
   </div>
 
-  <div>
+  <div id="submit">
     <%= form.submit %>
   </div>
 <% end %>
