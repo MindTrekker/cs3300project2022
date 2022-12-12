@@ -14,3 +14,73 @@
  *= require_self
  */
 
+ .navbar{
+    background-color: Navy!important;
+    margin-bottom:0px;
+    padding:1rem!important;
+  }
+  .notice {
+    margin:0px;
+    padding:0px;
+  }
+  .alert{
+    margin:0px!important;
+    padding:0!important;
+  }
+  body{
+    margin: 0px;
+    padding:0px;
+    background-color: SteelBlue!important;
+  }
+  
+  .div-centered {
+    text-align: left; 
+    padding-left: 11.35%;
+    padding-right: 11.35%;
+    align-items: top;
+  }
+  .button{
+    background-color: Navy;
+    font-size:25px;
+    border-style:none;
+    border-radius: 10px;
+    color:LightGrey;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    padding: 1rem;
+  }
+  .button:hover{
+    color:white;
+    background-color: SteelBlue;
+  }
+  
+  #form{
+    font-size: 20px;
+    color: Azure;
+    background-color: Navy;
+    border-style: solid;
+    border-color: SteelBlue;
+    border-width: 5px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  #intro{
+    background-color: Navy;
+    color: Azure;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding-left: 11.35%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  #page-title{
+    font-size: 60px;
+  }
+  #back-banner{
+    background-color: Azure!important;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100vh;
+  }
